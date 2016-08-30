@@ -25,13 +25,12 @@ $(document).ready(function(){
 				vote:voteValue
 			},
 			success: function(dataFromServer){
-
+				console.log(dataFromServer);
 
 			},
 			error: function(){
-				console.log("Cannot connect to server.")
+				console.log("Cannot connect to server.");
 			} 
-
 
 
 		});

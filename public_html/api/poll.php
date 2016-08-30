@@ -37,7 +37,7 @@ if($isValid == false){
 // $ipaddress = $_SERVER['REMOTE_ADDR'];
 
 // For testing create a random number 
-$ipaddress = rand(1,15);
+$ipaddress = rand() . "\n";
 
 // Connect to database
 $dbc = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -69,6 +69,8 @@ if($dbc->affected_rows == 1) {
 		'totalNo' => $result['TotalNo']
 
 	];
+
+	
 
 	//Prepare the header
 	header('Content-Type: application/json');
