@@ -32,9 +32,6 @@ $(document).ready(function(){
 
     		}
 
-
-
-
 		},
 		error:function(){
 			console.log('Cannot connect to server..')
