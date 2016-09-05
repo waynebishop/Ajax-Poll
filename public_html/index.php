@@ -15,6 +15,7 @@
 	</style>
 </head>
 <body>
+
 	<h1>AJAX Poll</h1>
 	<p>Do you like Ice Cream?</p>
 

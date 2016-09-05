@@ -34,10 +34,10 @@ if($isValid == false){
 
 // Get the users IP address
 // For testing comment out
-$ipaddress = $_SERVER['REMOTE_ADDR'];
+// $ipaddress = $_SERVER['REMOTE_ADDR'];
 
 // For testing create a random number 
-// $ipaddress = rand() . "\n";
+$ipaddress = rand() . "\n";
 
 // Connect to database
 $dbc = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -102,11 +102,7 @@ if($dbc->affected_rows == 1) {
 
 	echo json_encode($message); 
 
-
 }
-
-
-
 
 
 
